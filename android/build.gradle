@@ -8,14 +8,16 @@ def computeVersionName() {
 }
 
 buildscript {
-    repositories {
-        jcenter()
-    }
+  repositories {
+    jcenter()
+    google()
+  }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.+'
-    }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.2.1'
+  }
 }
+
 
 apply plugin: 'com.android.library'
 
